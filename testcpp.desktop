@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Test C/C++
+GenericName=CplusplusExecutor
+Exec=testcpp.desktop.zsh %U
+Icon=terminal
+Type=Application
+Categories=Application;Test;Programming;Executor;Executable;Compiler;C;C++;
+Comment=Test a single C/C++ file quickly
+Terminal=true
+NoDisplay=true
+MimeType=text/plain;text/x-csrc;text/x-c++src;
+Keywords=C++
