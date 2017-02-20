@@ -1,0 +1,17 @@
+#! /usr/bin/env sh
+
+src="$(realpath "$1")"
+out="$src.out"
+
+(
+  g++ -Wall -Wextra -std=c++14 -o "$out" "$src"
+) && (
+  echo 'Compiling succeed.'
+  echo 'Executing output...'
+  "$out"
+  echo 'done.'
+) || (
+  code=$?
+  echo 'Compiling failed.'
+  exit $code
+)
